@@ -57,6 +57,9 @@
       <DependentUpon>ClasseView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Lista\Curso.cs" />
+    <Compile Include="Lista\ListaEtiquetaView.xaml.cs">
+      <DependentUpon>ListaEtiquetaView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Lista\Produto.cs" />
     <Compile Include="Lista\ProdutoView.xaml.cs">
       <DependentUpon>ProdutoView.xaml</DependentUpon>
@@ -232,6 +235,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Lista\ProdutoView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Lista\ListaEtiquetaView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

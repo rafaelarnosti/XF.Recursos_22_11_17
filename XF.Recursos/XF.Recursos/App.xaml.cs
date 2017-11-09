@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace XF.Recursos
@@ -14,6 +14,11 @@ namespace XF.Recursos
             InitializeComponent();
 
             MainPage = new NavigationPage(new XF.Recursos.MainPage());
+        }
+
+        public static async Task Sleep(int ms)
+        {
+            await Task.Delay(ms);
         }
 
         protected override void OnStart()
