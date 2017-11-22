@@ -81,5 +81,9 @@ namespace XF.Recursos
         {
             await Navigation.PushAsync(new API.PhoneView());
         }
+        private async void btnCamera_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new API.CameraView());
+        }
     }
 }
