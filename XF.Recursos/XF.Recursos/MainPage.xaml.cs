@@ -85,5 +85,23 @@ namespace XF.Recursos
         {
             await Navigation.PushAsync(new API.CameraView());
         }
+
+        private async void btnData_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Controles.PickerView());
+        }
+
+        private async void btnProgresso_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Controles.ProgressoView());
+        }
+        private async void btnPicker_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Controles.ListPickerView());
+        }
+        private async void btnEditor_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Controles.EditorView());
+        }
     }
 }
