@@ -14,6 +14,10 @@ namespace XF.Recursos
             InitializeComponent();
         }
 
+        private async void btnCustom_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CustomControl.CustomView());
+        }
         private async void btnSimples_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Estilo.SimplesPage());
@@ -102,6 +106,14 @@ namespace XF.Recursos
         private async void btnEditor_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Controles.EditorView());
+        }
+        private async void btnStepper_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Controles.StepperView());
+        }
+        private async void btnWeb_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Browser.BrowserView());
         }
     }
 }

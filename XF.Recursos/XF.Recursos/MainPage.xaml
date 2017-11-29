@@ -7,6 +7,8 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
+                <Label FontSize="20" Text="Custom Control"></Label>
+                <Button x:Name="btnCustom" Text="Custom" Clicked="btnCustom_Clicked"></Button>
                 <Label FontSize="20" Text="Style Resources"></Label>
                 <Button x:Name="btnSimples" Text="Estilo padrão" Clicked="btnSimples_Clicked"></Button>
                 <Button x:Name="btnGlobal" Text="Estilo Global" Clicked="btnGlobal_Clicked"></Button>
@@ -34,6 +36,10 @@
                 <Button x:Name="btnProgresso" Text="Progresso" Clicked="btnProgresso_Clicked"></Button>
                 <Button x:Name="btnPicker" Text="List Picker" Clicked="btnPicker_Clicked"></Button>
                 <Button x:Name="btnEditor" Text="Editor" Clicked="btnEditor_Clicked"></Button>
+                <Button x:Name="btnStepper" Text="Stepper Control" Clicked="btnStepper_Clicked"></Button>
+                <Label FontSize="20" Text="WebView - Browser"></Label>
+                <Button x:Name="btnWeb" Text="Web" Clicked="btnWeb_Clicked"></Button>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

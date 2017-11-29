@@ -89,6 +89,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CameraFoto_iOS.cs" />
+    <Compile Include="FiapBoxViewRenderer.cs" />
+    <Compile Include="FiapButtonRederer.cs" />
     <Compile Include="GeoLocation_iOS.cs" />
     <Compile Include="Ligar_iOS.cs" />
     <Compile Include="Main.cs" />
