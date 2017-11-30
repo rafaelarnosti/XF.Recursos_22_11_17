@@ -5,6 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+
 namespace XF.Recursos
 {
     public partial class App : Application
@@ -12,10 +16,18 @@ namespace XF.Recursos
         public App()
         {
             InitializeComponent();
+            InitializeAppCenter();
 
             MainPage = new NavigationPage(new XF.Recursos.MainPage());
         }
 
+
+        private void InitializeAppCenter()
+        {
+            AppCenter.Start("android=fddd9dcf-9cda-4795-ac62-1667b84f361f;" + "uwp={Your UWP App secret here};" +
+                    "ios={Your iOS App secret here}",
+                    typeof(Analytics), typeof(Crashes));
+        }
         public static async Task Sleep(int ms)
         {
             await Task.Delay(ms);

@@ -21,11 +21,15 @@ namespace XF.Recursos.Droid
     {
         protected override void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.Button> e)
         {
+
+            FiapButton fiapButton = (FiapButton)Element;
+
             base.OnElementChanged(e);
 
             if (Control != null)
             {
                 Control.SetBackgroundColor(Android.Graphics.Color.Gray);
+                fiapButton.Text = fiapButton.Texto;
             }
         }
     }

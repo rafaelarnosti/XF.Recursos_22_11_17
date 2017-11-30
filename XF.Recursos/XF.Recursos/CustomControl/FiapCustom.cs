@@ -7,13 +7,17 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 namespace XF.Recursos.CustomControl
 {
-    public class FiapButton : Button { }
+    public class FiapButton : Button {
+        public string Texto { get; set; }
+    }
 
     public class ColorFromRGBExtension : IMarkupExtension
     {
         public int Vermelho { get; set; }
         public int Verde { get; set; }
         public int Azul { get; set; }
+
+        
 
         public object ProvideValue(IServiceProvider serviceProvider)
         {
